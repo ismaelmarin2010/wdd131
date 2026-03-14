@@ -1,0 +1,208 @@
+/* Hard Reset of CSS for the Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Variables */
+:root {
+    --primary-color: rgba(30, 79, 138, 1);
+    /* Blue for background */
+    --secondary-color: rgb(255, 226, 95);
+    /* Yellow as the safety helmet */
+    --accent1-color: rgb(59, 59, 59);
+    /* Forrest green for ...?*/
+    --accent2-color: rgba(255, 252, 242, 1);
+    /* For text over dark background */
+    --border-color: rgba(0, 0, 0, 1);
+    /* Black for border and some text */
+    --border-shadow-color: rgba(128, 128, 128, 1);
+    /* Gray for shadow */
+    --heading-font-family: "Google Sans", sans-serif;
+    --heading-font-weight: 500;
+    --heading-font-style: normal;
+    --heading-font-grad: 0;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/*--------------------------------*/
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/*--------------------------------*/
+
+/* HEADER */
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    /* margin: 1rem auto; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    align-items: center;
+}
+
+/*--------------------------------*/
+#course-title {
+    display: block;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    color: var(--accent2-color);
+    padding: 15px 0 15px 0;
+    text-align: center;
+}
+
+/*--------------------------------*/
+.navigation {
+    background-color: var(--accent1-color);
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: flex;
+    color: var(--accent2-color);
+    padding: 10px;
+    text-decoration: none;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.navigation a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    background-color: black;
+}
+
+/*--------------------------------*/
+main {
+    display: grid;
+    grid-template-columns: 0.1fr 2fr 1fr 0.1fr;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+
+/*--------------------------------*/
+main h1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    display: block;
+    text-align: center;
+    padding: 25px;
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+    font-style: var(--heading-font-style);
+    letter-spacing: 1px;
+    font-size: 2rem;
+    color: var(--accent1-color);
+    justify-content: center;
+}
+
+/*--------------------------------*/
+main .left {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+main .right {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+.card h2 {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card {
+    border: 1px solid var(--border-shadow-color);
+    border-radius: 12px;
+}
+
+.left img {
+    width: 150px;
+    height: auto;
+    padding: 2px;
+    margin: 1rem;
+}
+
+#rgt {
+    float: right;
+}
+
+#lft {
+    float: left;
+}
+
+.left p {
+    /* padding: 0.5rem; */
+    padding: 1rem;
+    font-size: var(--font-size);
+    line-height: 1.4rem;
+    font-family: var(--heading-font-family);
+    color: var(--accent1-color);
+}
+
+.left h3 {
+    text-align: center;
+    font-family: var(--heading-font-family);
+    color: var(--accent1-color);
+}
+
+.left h3 span {
+    border-bottom: 1px solid var(--border-shadow-color);
+    padding: 0 100px 5px 100px;
+}
+
+/*--------------------------------*/
+
+
+
+/*--------------------------------*/
+
+.right ul {
+    padding: 25px;
+    font-size: 1rem;
+}
+
+.right ul li a {
+    text-decoration: none;
+}
+
+/*--------------------------------*/
+
+/*--------------------------------*/
+footer {
+    font-family: var(--heading-font-family);
+    padding: 10px;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+}
+
+/*--------------------------------*/
