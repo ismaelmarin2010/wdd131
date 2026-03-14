@@ -37,13 +37,9 @@ footer {
 /*--------------------------------*/
 
 /* HEADER */
-header,
-footer {
+header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    /* margin: 1rem auto; */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; */
     align-items: center;
 }
 
@@ -198,6 +194,9 @@ main .right {
 footer {
     font-family: var(--heading-font-family);
     padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    align-items: center;
 }
 
 footer p {
