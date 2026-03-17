@@ -82,6 +82,18 @@ h1 {
     content: "☰";
 }
 
+nav {
+    display: flex;
+    width: 100%;
+}
+
+nav ul {
+    flex: 1;
+}
+
+.navigation.open {
+    display: flex;
+}
 
 .navigation.open a {
     display: block;
@@ -89,7 +101,7 @@ h1 {
 }
 
 .navigation {
-    display: flex;
+    display: none;
     background-color: var(--accent1-color);
     flex-direction: column;
     list-style: none;

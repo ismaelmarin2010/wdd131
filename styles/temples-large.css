@@ -4,6 +4,8 @@
         display: none;
     }
 
+    
+
     .navigation {
         background-color: var(--accent1-color);
         display: flex;
