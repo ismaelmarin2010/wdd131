@@ -1,0 +1,175 @@
+/* Hard Reset of CSS for the Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Variables */
+:root {
+    --primary-color: rgba(30, 79, 138, 1);
+    /* Blue for background */
+    --secondary-color: rgb(255, 226, 95);
+    /* Yellow as the safety helmet */
+    --accent1-color: rgb(59, 59, 59);
+    /* Forrest green for ...?*/
+    --accent2-color: rgba(255, 252, 242, 1);
+    /* For text over dark background */
+    --border-color: rgba(0, 0, 0, 1);
+    /* Black for border and some text */
+    --border-shadow-color: rgba(128, 128, 128, 1);
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/*--------------------------------*/
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    /*For centering the page.*/
+    border: 2px solid black;
+    border-radius: 10px;
+    /* padding: 0 15px 0 15px; */
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+img {
+    max-width: 380px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+h1,
+figure {
+    text-align: center;
+}
+
+h1 {
+    display: block;
+}
+
+/*--------------------------------*/
+
+#menu {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 1.5rem;
+    border: 0;
+    background: black;
+    padding: 6px 10px 10px 10px;
+    border-radius: 10px;
+    color: var(--accent2-color);
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "☰";
+}
+
+
+.navigation.open a {
+    display: block;
+    padding: 10px;
+}
+
+.navigation {
+    display: flex;
+    background-color: var(--accent1-color);
+    flex-direction: column;
+    list-style: none;
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.navigation a {
+    display: flex;
+    transition: background-color 0.3s ease;
+    color: var(--accent2-color);
+    padding: 10px;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.navigation a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    background-color: black;
+}
+
+/*--------------------------------*/
+
+/* HEADER */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    align-items: center;
+}
+
+/*--------------------------------*/
+#header-title {
+    display: block;
+    font-family: var(--heading-font);
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    color: var(--accent2-color);
+    padding: 15px 0 15px 0;
+    text-align: center;
+}
+
+/*--------------------------------*/
+
+
+/*--------------------------------*/
+
+
+
+
+
+
+
+
+
+/*--------------------------------*/
+footer {
+    font-family: var(--body-font);
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    align-items: center;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+/*--------------------------------*/
