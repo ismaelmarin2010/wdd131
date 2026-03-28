@@ -1,0 +1,109 @@
+/* Hard Reset of CSS for the Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Variables */
+:root {
+    --primary-color: rgb(110, 165, 233);
+    --secondary-color: rgb(255, 215, 0);
+    --accent1-color: rgb(255, 255, 255);
+    --accent2-color: rgb(15, 24, 29);
+    --heading-font: 'Orbitron', sans-serif;
+    --body-font: 'Rajdhani', sans-serif;
+}
+
+/*------- H T M L   T A G S ------*/
+header,
+main,
+footer {
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    border-bottom: 10px solid var(--secondary-color);
+}
+
+h1,
+h2 {
+    text-align: center;
+    letter-spacing: 4px;
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    display: block;
+    padding: 10px;
+}
+
+.right h2::after {
+    content: "";
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section table {
+    margin: 0 auto;
+}
+
+.right img {
+    max-width: 50px;
+}
+
+table {
+    font-family: var(--body-font);
+    letter-spacing: 2px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th {
+    text-align: right;
+}
+
+td {
+    padding-left: 4px;
+}
+
+th,
+td {
+    width: 50%;
+}
+
+.icon {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: auto;
+}
+
+
+/*--------------------------------*/
+footer {
+    font-family: var(--body-font);
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    align-items: center;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+/*--------------------------------*/

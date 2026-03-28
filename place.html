@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Ismael Marin</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Ismael Marin | Argentina Web Page">
+    <meta name="author" content="Ismael Marin">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="header-title">ARGENTINA</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="images/messi-cup.webp" media="(max-width: 580px)" type="image/webp">
+            <source srcset="images/messi-cup-large.webp" media="(min-width: 581px)" type="image/webp">
+            <img src="images/messi-cup.jpg" alt="Lionel Messi raising the World Cup">
+        </picture>
+        <section class="left">
+            <h2>DATA</h2>
+            <table>
+                <tr>
+                    <th>Area: </th>
+                    <td>2,780,400 sq km</td>
+                </tr>
+                <tr>
+                    <th>Population: </th>
+                    <td>~46,000,000</td>
+                </tr>
+                <tr>
+                    <th>Capital: </th>
+                    <td>Buenos Aires</td>
+                </tr>
+                <tr>
+                    <th>Languages: </th>
+                    <td>Spanish</td>
+                </tr>
+                <tr>
+                    <th>Currency: </th>
+                    <td>Argentine Peso (ARS)</td>
+                </tr>
+                <tr>
+                    <th>Time Zone: </th>
+                    <td>UTC−3</td>
+                </tr>
+                <tr>
+                    <th>Calling Code: </th>
+                    <td>+54</td>
+                </tr>
+                <tr>
+                    <th>Internet TLD: </th>
+                    <td>.ar</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="right">
+            <h2>WEATHER</h2>
+            <img class="icon" src="images/weather-icon.svg" alt="Weather icon">
+            <table>
+                <tr>
+                    <th>Temperature: </th>
+                    <td>20 °C</td>
+                </tr>
+                <tr>
+                    <th>Conditions: </th>
+                    <td>Parthly Cloudy</td>
+                </tr>
+                <tr>
+                    <th>Wind: </th>
+                    <td>5 km/h</td>
+                </tr>
+                <tr>
+                    <th>Wind Chill: </th>
+                    <td id="windChill"></td>
+                </tr>
+            </table>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> - Ismael Marin - Argentina</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

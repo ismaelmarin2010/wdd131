@@ -1,0 +1,46 @@
+@media screen and (min-width: 581px) {
+
+    header,
+    main,
+    footer {
+        max-width: 1000px;
+    }
+
+    main {
+        position: relative;
+    }
+
+    main img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    main section {
+        position: absolute;
+        width: 280px;
+        background: rgba(15, 24, 29, 0.8);
+        color: var(--accent1-color);
+        padding: 5px;
+    }
+
+    section h2 {
+        color: var(--accent1-color);
+    }
+
+    main section.left {
+        left: 20px;
+        top: 20px;
+    }
+
+    main section.right {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .right h2::after {
+        content: " ⛅";
+    }
+
+
+}
