@@ -1,0 +1,50 @@
+/* Hard Reset of CSS for the Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Variables */
+:root {
+    --primary-color: rgba(30, 79, 138, 1);
+    /* Blue for background */
+    --secondary-color: rgb(255, 226, 95);
+    /* Yellow as the safety helmet */
+    --accent1-color: rgb(59, 59, 59);
+    /* Forrest green for ...?*/
+    --accent2-color: rgba(255, 252, 242, 1);
+    /* For text over dark background */
+    --border-color: rgba(0, 0, 0, 1);
+    /* Black for border and some text */
+    --border-shadow-color: rgba(128, 128, 128, 1);
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/*--------------------------------*/
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+img,
+figure {
+    width: 400px;
+    min-height: 600px;
+    display: block;
+    margin: 0 auto;
+    animation: fadeIn 8s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
