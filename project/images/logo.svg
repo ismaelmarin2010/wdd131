@@ -1,0 +1,59 @@
+<svg width="420" height="420" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- DEFINITIONS -->
+  <defs>
+    <!-- Shield Gradient -->
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2F80ED"></stop>
+      <stop offset="100%" stop-color="#1C4FA1"></stop>
+    </linearGradient>
+
+    <!-- Subtle Shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.15"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- SHIELD -->
+  <path d="M210 40 
+           L330 95 
+           Q330 220 210 330 
+           Q90 220 90 95 Z" fill="url(#shieldGrad)" filter="url(#shadow)"></path>
+
+  <!-- INNER HIGHLIGHT -->
+  <path d="M210 65 
+           L305 110 
+           Q305 210 210 300 
+           Q115 210 115 110 Z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3"></path>
+
+  <!-- ENVELOPE -->
+  <rect x="135" y="140" width="150" height="95" rx="12" fill="#FFFFFF" filter="url(#shadow)"></rect>
+  
+  <path d="M135 140 L210 195 L285 140" fill="none" stroke="#D1D5DB" stroke-width="2"></path>
+
+  <!-- LOCK -->
+  <rect x="120" y="185" width="50" height="45" rx="8" fill="#F2C94C"></rect>
+  
+  <path d="M130 185 Q145 155 160 185" fill="none" stroke="#D4A62A" stroke-width="4"></path>
+
+  <circle cx="145" cy="205" r="4" fill="#333"></circle>
+
+  <!-- MAGNIFYING GLASS -->
+  <circle cx="275" cy="215" r="38" fill="#FFFFFF" stroke="#1C4FA1" stroke-width="4" filter="url(#shadow)"></circle>
+
+  <line x1="300" y1="240" x2="335" y2="275" stroke="#1C4FA1" stroke-width="7" stroke-linecap="round"></line>
+
+  <!-- CHECKMARK -->
+  <path d="M260 215 L272 228 L295 200" fill="none" stroke="#27AE60" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+
+  <!-- TITLE -->
+  <text x="210" y="370" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600" fill="#1F2937">
+    EMAIL SECURITY
+  </text>
+
+  <!-- SUBTITLE -->
+  <text x="210" y="400" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" letter-spacing="4" fill="#27AE60">
+    ANALYZER
+  </text>
+
+</svg>

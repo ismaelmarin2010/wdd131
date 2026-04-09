@@ -1,0 +1,116 @@
+/* Hard Reset of CSS for the Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Variables */
+:root {
+    --primary-blue: #2F80ED;
+    --accent-green: #27AE60;
+    --neutral-dark-gray: #1F2937;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/*--------------------------------*/
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    /*For centering the page.*/
+
+    /* padding: 0 15px 0 15px; */
+}
+
+header,
+footer,
+section {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+header {
+    background-color: var(--primary-blue);
+    color: var(--neutral-dark-gray);
+    align-items: center;
+}
+
+#header-title {
+    display: block;
+    font-family: var(--heading-font);
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    color: var(--neutral-dark-gray);
+    padding: 15px 0 15px 0;
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    margin: 1rem auto;
+    padding: .5rem;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin: .5rem 0 .5rem 0;
+}
+
+h2 {
+    color: var(--primary-blue);
+}
+
+h4 {
+    margin: 1rem 0 .5rem 0;
+}
+
+p {
+    margin-top: .5rem;
+}
+
+section img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+/*--------------------------------*/
+
+/*--------------------------------*/
+
+
+
+/*--------------------------------*/
+
+
+/*--------------------------------*/
+
+footer {
+    font-family: var(--body-font);
+    padding: 10px;
+    background-color: var(--primary-blue);
+    color: var(--neutral-dark-gray);
+    align-items: center;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+/*--------------------------------*/
